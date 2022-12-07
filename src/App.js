@@ -14,20 +14,15 @@ function App() {
     <Router>
       <div className="App">
         <div className="auth-wrapper">
-          <div className="logo">
-            <img src={Glasses} alt="Logo" />
-            <span className="logo-text">eOptics</span>
-          </div>
-          <div className="auth-inner">
-          <Routes>
-            <Route exact path="/" element={<Banner />} />
-            <Route path="/banner" element={<Banner />} />
-            
-            <Route path="/sign-in" element={<Login />} /> 
-            <Route path="/sign-up" element={<SignUp />} />
-            <Route path="/userDetails" element={<UserDetails />} />
-          </Routes>
-          </div>
+        <Routes>
+          <Route exact path="/" element={<Banner />} />
+          <Route path="/banner" element={<Banner />} />
+          
+          <Route path="/sign-in" element={<Login />} /> 
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/userDetails" element={<UserDetails />} />
+        </Routes>
+          {/*</div>*/}
         </div>
       </div>
     </Router>

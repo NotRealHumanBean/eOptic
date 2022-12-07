@@ -37,59 +37,61 @@ export default class SignUp extends Component {
   }
   render() {
     return (
-      <div className="bigger">
-        <form onSubmit={this.handleSubmit}>
-          <h3>Sign Up</h3>
+      <div className="auth-inner standart">
+        <div className="sign-in-wrapper">
+          <form onSubmit={this.handleSubmit}>
+            <h3>Sign Up</h3>
 
-          <div className="mx-sm-5">
-            <label>First name</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="First name"
-              onChange={(e) => this.setState({ fname: e.target.value })}
-            />
-          </div>
+            <div className="mx-sm-5">
+              <label>First name</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="First name"
+                onChange={(e) => this.setState({ fname: e.target.value })}
+              />
+            </div>
 
-          <div className="mx-sm-5">
-            <label>Last name</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Last name"
-              onChange={(e) => this.setState({ lname: e.target.value })}
-            />
-          </div>
+            <div className="mx-sm-5">
+              <label>Last name</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Last name"
+                onChange={(e) => this.setState({ lname: e.target.value })}
+              />
+            </div>
 
-          <div className="mx-sm-5">
-            <label>Email address</label>
-            <input
-              type="email"
-              className="form-control"
-              placeholder="Enter email"
-              onChange={(e) => this.setState({ email: e.target.value })}
-            />
-          </div>
+            <div className="mx-sm-5">
+              <label>Email address</label>
+              <input
+                type="email"
+                className="form-control"
+                placeholder="Enter email"
+                onChange={(e) => this.setState({ email: e.target.value })}
+              />
+            </div>
 
-          <div className="mx-sm-5">
-            <label>Password</label>
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Enter password"
-              onChange={(e) => this.setState({ password: e.target.value })}
-            />
-          </div>
+            <div className="mx-sm-5">
+              <label>Password</label>
+              <input
+                type="password"
+                className="form-control"
+                placeholder="Enter password"
+                onChange={(e) => this.setState({ password: e.target.value })}
+              />
+            </div>
 
-          <div className="d-grid mx-sm-5 mt-4">
-            <button type="submit" className="btn btn-warning">
-              Sign Up
-            </button>
-          </div>
-          <p className="forgot-password text-center">
-            Already registered <a href="/sign-in">sign in?</a>
-          </p>
-        </form>
+            <div className="d-grid mx-sm-5 mt-4">
+              <button type="submit" className="btn btn-warning">
+                Sign Up
+              </button>
+            </div>
+            <p className="forgot-password text-center">
+              Already registered <a href="/sign-in">sign in?</a>
+            </p>
+          </form>
+        </div>
       </div>
     );
   }
